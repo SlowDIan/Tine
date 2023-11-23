@@ -65,8 +65,8 @@ footer {
     margin-right: 15px;
 }
 
-.nav-link {
-    color: var(--text-light);
+.nav-link , box-icon {
+    color: var(--primary-color);
     font-size: 20px;
 }
 
@@ -78,5 +78,5 @@ footer {
 /* Estilo específico para el modo oscuro */
 .dark-mode {
     background-color: var(--background-dark);
-    color: var(--text-light);
+    color: var(--primary-color);
 }
