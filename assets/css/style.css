@@ -1,0 +1,82 @@
+:root {
+    --primary-color: #6366f1; /* Color principal */
+    --background-light: #fff; /* Fondo claro */
+    --background-dark: #121212; /* Fondo oscuro */
+    --text-light: #fff; /* Texto claro */
+    --text-dark: #333; /* Texto oscuro */
+    --box-shadow: rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Estilo minimalista para el interruptor de modo oscuro/claro */
+.form-check-label {
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+/* Estilo minimalista para el encabezado */
+header {
+    background-color: var(--background-light);
+    box-shadow: 0 2px 4px var(--box-shadow);
+    padding: 10px 0;
+}
+
+.logo {
+    max-width: 120px;
+}
+
+/* Estilo minimalista para el contenido principal */
+.container {
+    background-color: var(--background-light);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--box-shadow);
+    margin-top: 20px;
+}
+
+/* Estilo minimalista para el título principal */
+#top-10-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo minimalista para el pie de página */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--background-dark);
+    padding: 10px 0;
+}
+
+/* Estilo minimalista para el menú de navegación en el pie de página */
+.nav {
+    padding-left: 0;
+}
+
+.nav-item {
+    margin-right: 15px;
+}
+
+.nav-link {
+    color: var(--text-light);
+    font-size: 20px;
+}
+
+/* Cambiar color del texto del interruptor de modo oscuro/claro */
+.form-check-input:checked + .form-check-label {
+    color: var(--primary-color);
+}
+
+/* Estilo específico para el modo oscuro */
+.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+}
